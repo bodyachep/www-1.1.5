@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат з AI | Bodyachep</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Зв'язок з вашими стилями -->
+    <script src="chat.js" defer></script> <!-- Скрипт для чату -->
+</head>
+<body>
+    <header class="header">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <div class="container">
+            <a href="news.html"><button id="newsButton" class="header-button">Новини</button></a>
+            <div class="dropdown">
+                <button class="header-button">Про мене</button>
+                <div class="dropdown-content">
+                    <a href="gallery.html"class="header-button">Галерея</a>
+                    <a href="contact.html"class="header-button">Контакти</a>
+                    <a href="blog.html"class="header-button">Блог</a>
+                    <a href="projects.html"class="header-button">Мої проєкти</button></a>
+                </div>
+            </div>
+            <a href="tools.html"><button id="toolsButton" class="header-button">ІІ-інструменти</button></a>
+            <a href="forum.html"><button id="forumButton" class="header-button">Форум</button></a>
+            <a href="learningMaterials.html"><button id="learningButton" class="header-button">Відкритий Курс</button></a>
+            <a href="victorins.html"><button id="quizButton" class="header-button">Вікторини</button></a>
+            <!--<a href="html header/premium.html"><button id="premiumButton" class="header-button">Преміум</button></a>-->
+            <a href="../index.html"><button id="indexButton" class="header-button">Головна</button></a>
+            <a href="login.html"><button id="loginButton" class="header-button1">Вхід</button></a>
+            <a href="AIbodyachep.html">
+                <button id="chatButton" class="chat-button">Бодя AI</button>
+            </a> 
+        </div>
+                    
+    </header>
+
+    <main>
+        <div class="chat-container">
+            <h2 class="section-title">Скоро тут з'явиться багато цікавого!</h2>
+            <div id="chat-box" class="chat-box"></div>
+            <div class="chat-input-container">
+                <input type="text" id="user-input" class="chat-input" placeholder="Введіть повідомлення...">
+                <button class="send-button" onclick="sendMessage()">Відправити</button>
+            </div>
+            <div class="quick-questions">
+                <button onclick="sendQuickMessage('Привіт')">Привіт</button>
+                <button onclick="sendQuickMessage('Добрий день')">Добрий день</button>
+                <button onclick="sendQuickMessage('Як тебе звати?')">Як тебе звати?</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Bodyachep. Всі права захищені.</p>
+        <button id="scrollTopButton" class="scroll-top">⬆</button>
+        <button id="shareButton" class="share-button"><span>Поділитися</span></button>
+    </footer>
+
+    <button id="scrollTopButton" class="scroll-top">⬆</button>
+    <button id="shareButton" class="share-button"><span>Поділитися</span></button>
+    
+    <script src="../chat.js" defer></script>
+    <script src="../theme-toggle.js" defer></script>
+    <script src="../butscript.js" defer></script>
+    <script type="module" src="/html header/login.js"></script>
+   <!--  <script src="../userProfile.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>-->
+    
+</body>
+</html>

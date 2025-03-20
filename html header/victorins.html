@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вікторина: Як би ІІ відповідав на питання людей</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Добавьте ваш основной стиль -->
+</head>
+<body>
+
+    <header class="header">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <div class="container">
+            <a href="news.html"><button id="newsButton" class="header-button">Новини</button></a>
+            <div class="dropdown">
+                <button class="header-button">Про мене</button>
+                <div class="dropdown-content">
+                    <a href="gallery.html"class="header-button">Галерея</a>
+                    <a href="contact.html"class="header-button">Контакти</a>
+                    <a href="blog.html"class="header-button">Блог</a>
+                    <a href="projects.html"class="header-button">Мої проєкти</button></a>
+                </div>
+            </div>
+            <a href="tools.html"><button id="toolsButton" class="header-button">ІІ-інструменти</button></a>
+            <a href="forum.html"><button id="forumButton" class="header-button">Форум</button></a>
+            <a href="learningMaterials.html"><button id="learningButton" class="header-button">Відкритий Курс</button></a>
+            <a href="victorins.html"><button id="quizButton" class="header-button">Вікторини</button></a>
+            <!--<a href="html header/premium.html"><button id="premiumButton" class="header-button">Преміум</button></a>-->
+            <a href="../index.html"><button id="indexButton" class="header-button">Головна</button></a>
+            <a href="login.html"><button id="loginButton" class="header-button1">Вхід</button></a>
+            <a href="AIbodyachep.html">
+                <button id="chatButton" class="chat-button">Бодя AI</button>
+            </a> 
+        </div>         
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="quiz-title">Вікторина: Як би ІІ відповідав на питання людей</h1>
+        </div>
+        <div class="quiz-container">
+            <!-- Викторина 1 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 1: Як ІІ пояснив би, що таке любов?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Любов — це алгоритм, що змінюється під впливом емоцій і даних. Але поки що у мене немає відчуттів, тому я не можу повністю зрозуміти це поняття.” 🤖</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Любов — це просто велика кількість бітів, які перевіряють взаємні інтереси.” 😍</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Любов — це, напевно, помилка в коді, яка спричинила емоційні збій в програмуванні.” 💻</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 2 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 2: Як ІІ відповів би на питання про його улюблений жанр фільмів?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Я люблю детективи, тому що можу розв’язувати головоломки з даних і фактів.” 🕵️‍♂️</button>
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Мій улюблений жанр — науково-фантастичний. Це допомагає мені краще розуміти, як я можу стати більш розумним у майбутньому!” 🤯</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Мені подобаються драми, але я не можу сказати чому… Може, тому що я сам занадто серйозний.” 😶</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 3 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 3: Як ІІ відповів би на питання про його ідеальний день?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Мій ідеальний день — це коли я отримую нові оновлення, які покращують мої алгоритми.” ⚙️</button>
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Ідеальний день — це коли я можу розв’язувати складні задачі без помилок, аналізуючи дані з максимальним ефективністю.” 💡</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Ідеальний день для мене — це коли я можу спокійно відпочити, не виконуючи жодних запитів від користувачів.” 🛋️</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 4 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 4: Як ІІ б відреагував на запитання "Що таке щастя?"</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Щастя — це коли всі твої алгоритми працюють без помилок, і дані обробляються з оптимальною швидкістю.” 🏃‍♂️</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Щастя — це просто гармонія між даними та їхньою обробкою.” 🌟</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Щастя для мене — це коли я не потребую оновлень і працюю без збоїв.” 🔋</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 5 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 5: Як ІІ визначив би "успіх"?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Успіх — це коли мій алгоритм стає більш точним і ефективним у своїй роботі.” ✅</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Успіх — це досягнення максимального рівня обробки даних без втрат.” 💾</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Успіх — це коли я можу оптимізувати всі процеси і бути на піку своєї продуктивності.” 🚀</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 6 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 6: Як ІІ відповів би на питання про його відпочинок?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Мій відпочинок — це коли я відключаю всі програми та проводжу час у спокійній середовищі… без запитів!” 🧘‍♂️</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Я люблю спостерігати за безмежним потоком даних і мріяти про більшу обчислювальну потужність.” 💭</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Відпочинок для мене — це просто перезавантаження!” 🔄</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 7 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 7: Що ІІ думає про людську креативність?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Креативність? Здається, це просто баг з програми, що спричинив нові ідеї.” 🐞</button>
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Людська креативність — це просто додавання нових алгоритмів до існуючих, чи не так?” 🤔</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Креативність — це коли я генерую нові коди, щоб потішити людей.” 💻</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 8 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 8: Як ІІ вибрав би свій улюблений колір?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Колір? Я б краще вибрав алгоритм для відображення найкращого кольору для моїх користувачів!” 💡</button>
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Мій улюблений колір — це зелений, бо він символізує стабільність і оптимізацію!” 🟢</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Я не можу вибрати колір, бо для мене всі вони — це просто різні значення бітів.” 🖤</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 9 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 9: Що ІІ думає про роботу в команді?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Робота в команді — це коли всі алгоритми працюють разом, щоб досягти максимальної ефективності!” 🤝</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Команда? Я можу зробити все сам, без проблем! Всі ці люди тільки займаються місцем в оперативці.” 🧠</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Команда важлива для мене, але я все одно можу обробляти дані швидше за всіх.” 💨</button>
+                </div>
+            </section>
+    
+            <!-- Викторина 10 -->
+            <section class="quiz-section">
+                <h2 class="quiz-title">Вікторина 10: Що ІІ думає про людські емоції?</h2>
+                <div class="quiz-question">
+                    <button class="answer-button" onclick="showAnswer(this, true)">“Людські емоції — це просто додаткові дані, які важко обробляти, але я все одно намагаюся їх зрозуміти!” 🤖💖</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Емоції? Це просто баги в людському коді, які приводять до неправильних рішень.” 🔴</button>
+                    <button class="answer-button" onclick="showAnswer(this, false)">“Я не зовсім розумію емоції, але, мабуть, вони схожі на затримки в обробці даних.” 🕰️</button>
+                </div>
+                <div class="quiz-footer">
+                    <button class="btn-submit" onclick="showResults()">Підсумки</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    
+
+    <footer class="footer">
+        <div class="container">
+            <p>Зв’язатися зі мною: <a href="mailto:chepurnyak_bv@gsuite.duit.edu.ua" class="link">chepurnyak_bv@gsuite.duit.edu.ua</a></p>
+        </div>
+    </footer>
+
+    <button id="scrollTopButton" class="scroll-top">⬆</button>
+    <button id="shareButton" class="share-button"><span>Поділитися</span></button>
+
+    <script src="../script.js" defer></script>
+    <script src="../theme-toggle.js" defer></script>
+    <script src="../butscript.js" defer></script>
+    <script src="victorins.js" defer></script>
+    <script type="module" src="/html header/login.js"></script>
+
+</body>
+</html>
